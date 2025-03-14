@@ -165,7 +165,7 @@ function reset() {
 
 // Add event listeners to the tiles to move when selected
 for(let i = 0; i < tiles.length; i++) {
-    tiles[i].addEventListener("mouseup", function (e) { 
+    tiles[i].addEventListener("keydown", function (e) { 
         tileSelected(e)
     });
 }
@@ -175,4 +175,4 @@ document.getElementById("shuffle-board").addEventListener("click", shuffle);
 document.getElementById("show-finished").addEventListener("click", reset);
 
 // Shuffle the board
-shuffle();
+// shuffle();
